@@ -1,5 +1,940 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sportify Sporcu Yönetim Sistemi</title>
+    <meta name="description" content="Sportify App, sportifyapp, Sportify Türkiye, sporcu yönetim programı, spor, takip, spor kulübü, aidat takip, uygulama"/>
+    <meta name="keywords" content="Sportify, spor kulübü, sporcu takibi, lisans takibi, sporcu takip uygulaması, sporcu yönetim uygulaması, sporcu takip, sporcu yönetim, spor kulübü, basketbol, voleybol, futbol, basketbol, voleybol, futbol, spor, tenis, kurs, öğrenci takip, öğrenci takibi, uygulama, aidat, lisans"/>
+    <meta name="author" content="Sportify App Türkiye"/>
+
+    <head>
+        <title>Site Başlığı</title>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Dark/Light Mode</title>
+            <style>
+                /* Temel light-mode CSS */
+                body {
+                    background-color: white;
+                    color: black;
+                }
+        
+                /* Dark-mode CSS */
+                .dark-mode {
+                    background-color: #121212;
+                    color: white;
+                }
+        
+                /* Switcher tasarımı */
+                .dl-switcher {
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+        
+                .dl-switcher .state {
+                    margin: 0 10px;
+                }
+            </style>
+        </head>
+        
+    </head>
+    
+
+    <!-- favicon -->
+    <link href="assets/images/favicon.ico" rel="shortcut icon">
+
+
+
+
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Jarallax Css -->
+    <link href="assets/libs/jarallax/jarallax.min.css" rel="stylesheet">
+
+    <!-- Swiper Css -->
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main Css -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+    </style>
+    
+
+   
+</head>
+
 <body>
-<h1>Test Sayfam</h1>
+
+    <!-- Navbar Start -->
+    <nav class="navbar fixed top-0 start-0 end-0 z-999 transition-all duration-500 py-5 items-center shadow-md lg:shadow-none [&.is-sticky]:bg-white group [&.is-sticky]:shadow-md bg-white lg:bg-transparent" id="navbar">
+        <div class="container">
+        
+            <div class="flex lg:flex-nowrap flex-wrap items-center">
+
+                <a href="https://www.sportifyapp.com.tr" class="flex items-center">
+                    <img src="assets/images/logo.png" class="h-9 flex">
+                </a>
+
+                <div class="lg:hidden flex items-center ms-auto px-2.5">
+                    <button class="hs-collapse-toggle" type="button" id="hs-unstyled-collapse" data-hs-collapse="#navbarCollapse">
+                        <i data-lucide="menu" class="h-8 w-8 text-black"></i>
+                    </button>
+                </div>
+
+                <div class="navigation hs-collapse transition-all duration-300 lg:basis-auto basis-full grow hidden items-center justify-center lg:flex mx-auto overflow-hidden mt-6 lg:mt-0 nav-light" id="navbarCollapse">
+                    <ul class="navbar-nav flex-col lg:flex-row gap-y-2 flex lg:items-center justify-center" id="navbar-navlist">
+                        <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark all duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#home">Ana Sayfa</a>
+                        </li>
+
+                        <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#services">Sunduğumuz Hizmetler</a>
+                        </li>
+    
+                        <!-- <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#features">Özellikler</a>
+                        </li>
+
+                        <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#pricing">Pricing</a> -->
+                        </li>
+    
+                        <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#testimonial">Neler Yapıyoruz?</a>
+                        </li>
+
+                        <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#blog">Blog</a>
+                        </li>
+
+                        <li class="nav-item mx-1.5 transition-all text-dark lg:text-black group-[&.is-sticky]:text-dark duration-300 hover:text-primary [&.active]:!text-primary group-[&.is-sticky]:[&.active]:text-primary">
+                            <a class="nav-link inline-flex items-center text-sm lg:text-base font-medium py-0.5 px-2 capitalize" href="#contact">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                
+                <div class="theme-switcher">
+                    <span class="theme-label">🌙 Dark Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                
+                <div class="ms-auto shrink hidden lg:inline-flex gap-2">
+                    <a href="assets/sportifyapp-info.pdf" class="py-2 px-6 inline-flex items-center gap-2 rounded-md text-base text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">
+                        <i data-lucide="download-cloud" class="h-4 w-4 fill-white/40"></i>
+                        <span class="hidden sm:block">Dijital Broşür</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- =========== Hero Section Start =========== -->
+    <section class="relative pt-32 pb-20 bg-gray-200/40 bg-[url(../images/home/bg-3.png)] bg-no-repeat bg-cover" id="home">
+        <div class="container">
+            
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-10 items-center">
+                <div class="">
+                    <h1 class="text-3xl md:text-5xl/tight lg:text-6xl/tight text-black tracking-normal capitalize leading-normal font-bold max-w-2xl">Sportify'ı Ücretsiz Deneyin!
+                    </h1>
+                    <p class="text-base font-medium text-muted mt-3 capitalize">Spor kulübünüzü dijitalleştirin, 1 AY ÜCRETSİZ deneyin!
+                        Sınırsız sporcu, antrenör ve şube ekleme, gelişmiş yoklama & aidat takibi, rozet sistemi ve veli bilgilendirmeleriyle farkı keşfedin.
+                        
+                        Şimdi bize ulaşın, online sunum ile tüm özellikleri tanıtalım ve deneme sürümünüzü hemen başlatalım!</p>
+                    
+                    <div class="flex flex-wrap mt-9 text-center gap-3">
+                        <button class="py-2 px-6 rounded-md text-white text-base bg-primary hover:bg-primaryDark border border-primary hover:border-primaryDark transition-all duration-500 font-medium" onclick="window.location.href='#contact'">Bize Ulaşın</button>
+                        <!-- <button  class="py-2 px-6 text-primary rounded-md border border-primary text-base hover:border-primary hover:bg-primary hover:text-white transition-all duration-500 font-medium">See Pricing</button> -->
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="assets/images/interior.png" class="md:h-[350px] lg:ms-auto  mx-auto mt-10" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Start -->
+    <section id="services" class="py-20">
+        <div class="container">
+            <div class="max-w-2xl mx-auto text-center">
+                <span class="text-sm text-primary uppercase font-semibold tracking-wider text-default-950">SUNDUĞUMUZ HİZMETLER</span>
+                <h2 class="text-3xl md:text-4xl/tight font-semibold text-black mt-4"> Sportify ile Tanışın!</h2>
+                <p class="text-base font-medium mt-4 text-muted">Spor okulu yönetimini dijitale taşıyan Sportify, kulüplerin tüm süreçlerini tek platformda yönetmesini sağlar.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-3 gap-y-6 md:gap-y-12 lg:gap-y-24 md:pt-20 pt-12">
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="infinity" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-semibold pt-4">Sınırsız Erişim & Sabit Fiyat </h1>
+                    <p class="text-base text-gray-600 mt-2">Şube, sporcu ve antrenör sınırı olmadan tüm özelliklere tek ücretle erişin. Ek maliyet yok, sürpriz yok!</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="user-check" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-semibold pt-4">Yoklama & Aidat Takibi </h1>
+                    <p class="text-base text-gray-600 mt-2">Hızlı yoklama al, aidatları kolayca takip et. Tüm işlemler düzenli ve eksiksiz!</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="medal" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-semibold pt-4">Rozet & Sportify Coin Sistemi </h1>
+                    <p class="text-base text-gray-600 mt-2">Sporcuları motive eden özel rozetler ve coin sistemiyle katılımı artır, gelişimi teşvik et!</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="timer-reset" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-semibold pt-4">Sporcu Gelişim & Performans Takibi </h1>
+                    <p class="text-base text-gray-600 mt-2">Periyodik testler ve gelişim grafikleriyle sporcuların ilerlemesini anlık takip edin.</p>
+                </div>
+
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="bell-ring" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-semibold pt-4">Veli Bildirimleri & Hatırlatmalar </h1>
+                    <p class="text-base text-gray-600 mt-2">Velilere anında bilgilendirme ve hatırlatmalar göndererek iletişimi güçlendirin.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="salad" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-semibold pt-4">Antrenman & Beslenme Planlaması </h1>
+                    <p class="text-base text-gray-600 mt-2">Takım ve bireysel antrenman planları oluştur, beslenme takibi yaparak sporcuları destekle.</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="file-lock-2" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-semibold pt-4">Evrak Yükleme & Lisans Takibi </h1>
+                    <p class="text-base text-gray-600 mt-2">Tüm belgeleri dijital olarak saklayın, kayıp evrak derdine son verin!</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="flex items-center justify-center">
+                        <div class="items-center justify-center flex bg-primary/10 rounded-[49%_80%_40%_90%_/_50%_30%_70%_80%] h-20 w-20 border">
+                            <i data-lucide="languages" class="h-10 w-10 text-primary"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-xl font-semibold pt-4">Çok Dilli & Uluslararası Kullanım </h1>
+                    <p class="text-base text-gray-600 mt-2">Sportify, global kulüpler için çok dilli destek sunarak her yerden erişim imkanı sağlar.</p>
+                </div>
+            </div>
+            <div class="max-w-2xl mx-auto text-center">
+                <br>
+                <p class="text-base font-semibold mt-4 text-muted">Sportify ile tanışın, spor okulu yönetimini akıllı ve pratik hale getirin! 🚀 </p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Services End -->
+
+    <!-- Feature Start -->
+    <section id="features" class="py-20">
+        <div class="container">
+
+            <div class="grid lg:grid-cols-2 items-center gap-6">
+                <div class="flex items-center">
+                    <img src="assets/images/feature.jpg" class="h-[650px] rounded-xl mx-auto" alt="feature section">
+                </div> 
+
+                <div class="lg:ms-5 ms-8">
+                    <span class="text-sm text-primary uppercase font-semibold tracking-wider text-default-950">İŞİNİZE ODAKLANIN</span>
+                    <h2 class="text-3xl md:text-4xl/tight font-semibold text-black mt-4">Kolay Paketimizle Siz İşinize Odaklanın, Takibini Biz Yapalım!</h2>
+                    <hr class="border-gray-200 my-6"></hr>
+
+                    <div class="flex items-start gap-5">
+                        <div>
+                            <div class="w-12 h-12 rounded-full border border-dashed border-primary/40 bg-primary/10 flex items-center justify-center">
+                                <i data-lucide="check" class="text-base text-blue-600"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-semibold">Sınırsız Erişim & Sabit Fiyat</h4>
+                            <p class="text-base font-normal text-gray-500 mt-2">Diğer sistemlerde farklı paketlerle sınırlı özellikler sunulurken, Sportify'da tek ödeme ile tüm özelliklere sınırsız erişim sağlarsınız! İstediğiniz kadar şube, sporcu ve antrenör ekleyin, ek maliyet olmadan tüm süreci yönetin.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-5 mt-8">
+                        <div>
+                            <div class="w-12 h-12 rounded-full border border-dashed border-primary/40 bg-primary/10 flex items-center justify-center">
+                                <i data-lucide="badge-percent" class="text-base text-blue-600"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-semibold">1 Aylık Ücretsiz Deneme!</h4>
+                            <p class="text-base font-normal text-gray-500 mt-2">Sportify'ı hiçbir taahhüt olmadan 1 ay boyunca ücretsiz deneyin! Kulübünüzü dijitalleştirmenin ve tüm süreçleri tek bir platformda yönetmenin avantajlarını keşfedin.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-start gap-5 mt-8">
+                        <div>
+                            <div class="w-12 h-12 rounded-full border border-dashed border-primary/40 bg-primary/10 flex items-center justify-center">
+                                <i data-lucide="phone-call" class="text-base text-blue-600"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-semibold">Bize Ulaşın, Sportify'ı Keşfedin!</h4>
+                            <p class="text-base font-normal text-gray-500 mt-2">Online sunum ile Sportify'ın tüm avantajlarını size özel olarak tanıtalım ve kulübünüz için 1 aylık ücretsiz deneme sürümünü hemen başlatalım!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature End -->
+    <section class="relative py-20">
+        <div class="absolute inset-0 w-full h-full bg-gray-900/70 z-10"></div>
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop>
+            <source src="assets/images/home/video.mp4" type="video/mp4">
+        </video>
+
+        <div class="container relative z-20">
+            <div class="pb-10 lg:pb-0 flex flex-col items-center justify-center">
+                <h1 class="text-3xl md:text-4xl/tight font-semibold text-white text-center">Sporu yönetmenin en akıllı yolu!</h1>
+                <p class="text-base font-normal max-w-xl text-center mx-auto text-white mt-6">Tüm süreçleri tek bir platformda kontrol et, zamanı verimli kullan, başarıya odaklan!</p>
+                <div class="flex flex-wrap mt-6 gap-3">
+                    <button id="fullscreen-video-btn" class="py-2 px-6 rounded-md border border-white text-base hover:border-white hover:bg-white hover:text-primary transition-all duration-500 font-medium text-white ">Tanıtım Videomuzu Görüntüleyin</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- About Start -->
+    <section id="about" class="py-20">
+        <div class="container">
+
+            <div class="grid lg:grid-cols-2 items-center gap-6">
+                <div class="lg:ms-5 ms-8">
+                    <div>
+                        <span class="text-sm text-primary uppercase font-semibold tracking-wider text-default-950">Nasıl Sportify'lı Olurum?</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl/tight font-semibold text-primary mt-4">Sürecimiz Nasıl İşliyor?</h2>
+                    <p class="text-base font-normal text-muted mt-6"> </p>
+                    <div class="grid lg:grid-cols-3 grid-cols-1 gap-8 mt-9">
+
+                        <div class="">
+                            <div class="flex items-center justify-start">
+                                <div class="items-center justify-center flex bg-green-50 rounded-full h-20 w-20 border border-dashed border-green-50">
+                                    <i data-lucide="smartphone" class="h-8 w-8 text-black"></i>
+                                </div>
+                            </div>
+                            <h1 class="text-xl font-semibold pt-6">1. İhtiyacınızı Belirleyin</h1>
+                            <p class="text-base text-gray-600 font-normal mt-2">Her spor kulübünün dinamikleri farklıdır. Kaç şubeniz var? Kaç sporcu ve antrenörle çalışıyorsunuz? Aidat ve yoklama takibi sizin için ne kadar kritik? Öncelikle kulübünüzün yönetim süreçlerindeki zorlukları belirleyin ve Sportify'ın sunduğu çözümlerin size nasıl yardımcı olacağını keşfedin. İster bireysel sporcular, ister takım branşları, ister büyük kulüpler olsun, Sportify her ölçekteki organizasyon için en iyi yönetim deneyimini sunar!
+                        </div>
+
+                        <div class="">
+                            <div class="flex items-center justify-start">
+                                <div class="items-center justify-center flex bg-red-50 rounded-full h-20 w-20 border border-dashed border-red-50">
+                                    <i data-lucide="file-text" class="h-8 w-8 text-black"></i>
+                                </div>
+                            </div>
+                            <h1 class="text-xl font-semibold  pt-6">2. Bizimle İletişime Geçin</h1>
+                            <p class="text-base text-gray-600 font-normal mt-2">Sportify'ın size nasıl yardımcı olacağını öğrenmek için bizimle iletişime geçin! Size özel bir online sunum yaparak tüm özellikleri detaylıca anlatıyor, kulübünüzün ihtiyaçlarına uygun en iyi çözümleri sunuyoruz. Aklınızdaki tüm soruları yanıtlıyor, sistemin nasıl çalıştığını canlı olarak gösteriyoruz. Spor yönetimini dijitale taşımak için ilk adımı atın, kulübünüzü daha verimli ve organize hale getirelim!
+                        </div>
+
+                        <div class="">
+                            <div class="flex items-center justify-start">
+                                <div
+                                    class="items-center justify-center flex bg-primary/10 rounded-full h-20 w-20 border border-dashed border-primary/10">
+                                    <i data-lucide="rocket" class="h-8 w-8 text-black"></i>
+                                </div>
+                            </div>
+                            <h1 class="text-xl font-semibold pt-6">3. Ücretsiz Deneyin</h1>
+                            <p class="text-base text-gray-600 font-normal mt-2">Sportify'ı keşfetmenin en iyi yolu, onu doğrudan deneyimlemek! 1 aylık ücretsiz deneme süresiyle tüm özelliklere sınırsız erişim sağlayabilir, yoklama ve aidat takibini nasıl kolaylaştırdığını, veli bildirimlerinin ne kadar pratik olduğunu ve sporcu gelişim takibinin nasıl çalıştığını birebir görebilirsiniz. Risk yok, taahhüt yok – sadece kulübünüz için en iyi dijital yönetim deneyimi!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <img src="assets/images/feature-iphone.png" class="h-[600px] rounded-xl mx-auto" alt="feature-image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Faqs Start -->
+    <section id="FAQs" class="py-20 bg-gray-50">
+        <div class="container">
+            <div class="">
+                <div class="text-center max-w-xl mx-auto">
+                    <div>
+                        <span class="text-sm text-primary uppercase font-medium tracking-wider text-default-950 mb-6">S.S.S</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl/tight font-semibold mt-4">Sık Sorulan Sorular</h2>
+                </div>
+
+                <div id="accordion-collapse" data-accordion="collapse" class="md:gap-[30px] mt-14 bg-white rounded-xl">
+                    <div class="hs-accordion-group divide-y divide-gray-200">
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-1">
+                                <button type="button" class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                    aria-controls="accordion-collapse-body-1">
+                                    <span>Sportify hangi branşlar için uygundur?</span>
+                                    <svg data-accordion-icon class="size-4 rotate-180 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-1" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-1">
+                                <div class="px-5 pb-5">
+                                    <p class="text-muted text-base font-normal">Sportify; futbol, basketbol, yüzme, cimnastik, karate, aikido, voleybol, hentbol ve daha birçok branş için kullanılabilir. Takım ve bireysel sporların tüm ihtiyaçlarına uyum sağlar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-2">
+                                <button type="button" class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-2">
+                                    <span>Sportify gerçekten sınırsız kullanım sunuyor mu?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-2" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-2">
+                                <div class="px-5 pb-5">
+                                    <p class="text-muted text-base font-normal">Evet! Sınırsız sayıda şube, antrenör ve sporcu ekleyebilirsiniz. Tüm özellikler tek fiyatla, ekstra ücret olmadan tamamen açık!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-3">
+                                <button type="button" class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-3">
+                                    <span>Rozet ve Sportify Coin sistemi nasıl çalışıyor?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-3" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-3">
+                                <div class="px-5 pb-5">
+                                    <p class="text-muted text-base font-normal">Sporcular, antrenmanlara düzenli katılım, görev tamamlama ve gelişim gösterme gibi aktivitelerle rozetler ve Sportify Coinler kazanır. Bu ödüller, sporcuların profilinde sergilenerek motivasyonu artırır.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-4">
+                                <button type="button" class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-4">
+                                    <span>Velilere bildirim gönderiliyor mu?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-4" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-4">
+                                <div class="px-5 pb-5">
+                                    <p class="text-muted text-base font-normal">Evet! Yoklama, ödeme hatırlatmaları, antrenman değişiklikleri ve özel duyurular anında velilere bildirim olarak iletilir. Böylece iletişim her zaman güçlü kalır.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <h2 class="text-base font-semibold" id="accordion-collapse-heading-5">
+                                <button type="button" class="flex justify-between items-center px-5 py-4 w-full font-semibold text-lg text-start" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
+                                    aria-controls="accordion-collapse-body-4">
+                                    <span>1 aylık deneme sürümü nasıl başlatılır?</span>
+                                    <svg data-accordion-icon class="size-4 shrink-0" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </h2>
+                            <div id="accordion-collapse-body-5" class="hidden"
+                                aria-labelledby="accordion-collapse-heading-5">
+                                <div class="px-5 pb-5">
+                                    <p class="text-muted text-base font-normal">Çok kolay! Bize ulaşın, online sunumla Sportify'ı keşfedin ve 1 aylık ücretsiz deneme sürümünüzü hemen başlatalım! 🚀</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faqs End -->
+
+    <!-- Testimonial Start -->
+    <section id="testimonial" class="py-20">
+        <div class="container">
+            <div class="">
+                <div class="text-center max-w-xl mx-auto">
+                    <span class="text-sm text-primary uppercase font-semibold tracking-wider text-default-950"></span>
+                    <h2 class="text-3xl md:text-4xl/tight font-semibold mt-4">Başka Neler Yapabiliriz?</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 mt-14 items-center">
+                <div class="relative">
+                    <div class="swiper testi-swiper rounded-md relative px-1">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <div class="p-6 rounded-xl border border-default-200">
+                                    <h3 class="text-xl font-semibold text-default-950">Kişiye Özel Antrenman Planları</h3>
+                                    <p class="text-base font-normal mt-4 mb-4 text-muted">
+                                        Antrenörler, sporcular için bireysel veya takım bazlı antrenman programları oluşturabilir. Sporculara özel ödevler vererek gelişimlerini hızlandırabilirsiniz.
+                                    </p>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="p-6 rounded-xl border border-default-200">
+                                    <h3 class="text-xl font-semibold text-default-950">Periyodik Gelişim Testleri ve Raporlar</h3>
+                                    <p class="text-base font-normal mt-4 mb-4 text-muted">
+                                        Sportify, düzenli performans testleri ve analizlerle sporcuların gelişimini takip eder. Gelişim grafikleri sayesinde antrenörler ve veliler ilerlemeyi net bir şekilde görebilir.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="p-6 rounded-xl border border-default-200">
+                                    <h3 class="text-xl font-semibold text-default-950">Evrak Takibi ve Lisans Yönetimi</h3>
+                                    <p class="text-base font-normal mt-4 mb-4 text-muted">
+                                        Veliler, sporcu lisans belgelerini ve gerekli evrakları uygulama üzerinden yükleyebilir. Antrenörler ve yöneticiler eksik belgeleri tek ekrandan kontrol edebilir.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="p-6 rounded-xl border border-default-200">
+                                    <h3 class="text-xl font-semibold text-default-950">Anlık Bildirim ve Hatırlatmalar</h3>
+                                    <p class="text-base font-normal mt-4 mb-4 text-muted">
+                                        Antrenman değişiklikleri, müsabaka duyuruları, aidat hatırlatmaları ve yoklama bildirimleri anında iletilir. Böylece hem sporcular hem de veliler her zaman güncel kalır.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center gap-3 w-full relative mt-10">
+                        <div class="testi-button-prev">
+                            <div
+                                class="h-11 w-11 rounded-full shadow border border-default-300 bg-default-100 text-default-900 hover:bg-primary hover:border-primary hover:text-white flex items-center justify-center transition-all duration-300">
+                                <i data-lucide="chevron-left" class="h-6 w-6"></i>
+                            </div>
+                        </div>
+                        <div class="testi-button-next">
+                            <div
+                                class="h-11 w-11 rounded-full shadow border border-default-300 bg-default-100 text-default-900 hover:bg-primary hover:border-primary hover:text-white flex items-center justify-center transition-all duration-300">
+                                <i data-lucide="chevron-right" class="h-6 w-6"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial End -->
+
+    <!-- Client Start -->
+    <!--
+    <section class="py-20 bg-gray-50">
+        <div class="container relative">
+            <div class="">
+                <div class="text-center max-w-xl mx-auto">
+                    <h3 class="text-3xl md:text-4xl/tight font-semibold">Trusted by Leading Companies</h3>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px] mt-14">
+                <div class="mx-auto py-4">
+                    <img src="assets/images/client/amazon.svg" class="h-10" alt="">
+                </div>
+
+                <div class="mx-auto py-4">
+                    <img src="assets/images/client/google.svg" class="h-10" alt="">
+                </div>
+
+                <div class="mx-auto py-4">
+                    <img src="assets/images/client/lenovo.svg" class="h-10" alt="">
+                </div>
+
+                <div class="mx-auto py-4">
+                    <img src="assets/images/client/paypal.svg" class="h-10" alt="">
+                </div>
+
+                <div class="mx-auto py-4">
+                    <img src="assets/images/client/shopify.svg" class="h-10" alt="">
+                </div>
+
+                <div class="mx-auto py-4">
+                    <img src="assets/images/client/spotify.svg" class="h-10" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- Client Start -->
+
+    <!-- Blog Start -->
+    <section id="blog" class="py-20">
+        <div class="container">
+            <div class="">
+                <div class="text-center max-w-xl mx-auto">
+                    <span class="text-sm text-primary uppercase font-semibold tracking-wider text-default-950">Blog</span>
+                    <h2 class="text-3xl md:text-4xl/tight font-semibold mt-4">Son blog yazılarımıza göz atın</h2>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-14 items-center">
+                <div class="bg-white rounded-xl border">
+                    <div class="relative">
+                        <img class="rounded-t-xl" src="assets/images/blog/05.jpg" alt="">
+                    </div>
+                    <div class="flex py-6 px-6">
+                        <div>
+                            <a href="#" class="text-xl text-black font-semibold line-clamp-2">Dijital Dönüşüm: İş Dünyasından Günlük Hayata Büyük Değişim</a>
+                            <p class="mt-4 mb-6 text-gray-500 leading-6">Teknoloji hayatımızın her alanında köklü değişiklikler yapıyor. İş dünyasında verimliliği artırırken, eğitimden sağlığa kadar birçok sektörde süreçleri hızlandırıyor. Peki, dijital dönüşüme ne kadar hazırsınız?</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl border">
+                    <div class="relative">
+                        <img class="rounded-t-xl" src="assets/images/blog/07.jpg" alt="">
+                    </div>
+                    <div class="flex py-6 px-6">
+                        <div>
+                            <a href="#" class="text-xl text-black font-semibold line-clamp-2">Sporda Dijitalleşme: Veri Analitiği ve Teknolojinin Gücü</a>
+                            <p class="mt-4 mb-6 text-gray-500 leading-6">Artık antrenmanlar, maç performansları ve sporcu gelişimi sayılarla ölçülüyor! Giyilebilir teknolojiler, akıllı antrenman planlamaları ve büyük veri analitiği sayesinde sporcuların performansı optimize ediliyor. Gelecekte bizi neler bekliyor?</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl border">
+                    <div class="relative">
+                        <img class="rounded-t-xl" src="assets/images/blog/04.jpg" alt="">
+                    </div>
+                    <div class="flex py-6 px-6">
+                        <div>
+                            <a href="#" class="text-xl text-black font-semibold line-clamp-2">Oyunlaştırma: Eğitimden İş Hayatına, Motivasyonu Artıran Sistem</a>
+                            <p class="mt-4 mb-6 text-gray-500 leading-6">İnsan psikolojisi, ödüllendirme ve rekabetle gelişir. Oyunlaştırma, eğitimden iş dünyasına kadar birçok alanda motivasyonu artıran bir strateji olarak kullanılıyor. Peki, doğru oyunlaştırma stratejileri nasıl oluşturulur?</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog End -->
+
+    <!-- Contact Start -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container">
+            <div class="grid lg:grid-cols-3 gap-6 items-center">
+                <div>
+                    <div>
+                        <span class="text-sm text-primary uppercase font-semibold tracking-wider text-default-950 mb-6">İLETİŞİME GEÇİN</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl/tight font-semibold mt-4">Sizin için buradayız</h2>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-start mt-10">
+                        <div class="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i data-lucide="map-pin" class="text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-base text-muted font-medium mb-1">Karşıyaka, İzmir</h5>
+                            <a href="https://maps.app.goo.gl/vv8zD8jVkanLSQ4cA" class="text-xs text-primary font-bold uppercase">Konumu Görüntüleyin</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-start mt-10">
+                        <div class="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i data-lucide="mail" class="text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-base text-muted font-medium mb-1">info@sportifyapp.com.tr</h5>
+                            <a href="#" class="text-xs text-primary font-bold uppercase">Email Adresimiz</a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-start mt-10">
+                        <div class="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                            <i data-lucide="smartphone" class="text-2xl text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-base text-muted font-medium mb-1">0545 590 2735</h5>
+                            <a href="#" class="text-xs text-primary font-bold uppercase">Telefon Numaramız</a>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="text-primary flex gap-10">
+                        <a href="https://www.instagram.com/sportify.turkiye/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                          </svg>
+                        </a>
+                        <a href="https://x.com/SportifyAppTr" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                          </svg>
+                        </a>  
+                        <a href="https://www.linkedin.com/in/sportify-turkiye-a3790934a/" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                          </svg>
+                        </a>
+                    </div>
+                      
+                      
+
+                    <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-start mt-10">
+                        <p class="text-base text-muted"><script>document.write(new Date().getFullYear())</script>© Sportify - <a class="text-primary" href="https://www.sportifyapp.com.tr">Sportifyapp.com.tr/</a></p>
+                    </div>
+                    
+                </div>
+
+                <div class="lg:col-span-2 lg:ms-24">
+                    <div class="p-6 md:p-12 rounded-md shadow-lg bg-white">
+                        <form name="contact-form" action="https://submit-form.com/CzNffmoMl" method="POST">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="formFirstName" class="block text-sm/normal font-semibold text-black mb-2">Adınız</label>
+                                    <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formFirstName" placeholder="Ad..." required="" name="formFirstName">
+                                </div>
+
+                                <div>
+                                    <label for="formLastName" class="block text-sm/normal font-semibold text-black mb-2">Soyadınız</label>
+                                    <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formLastName" placeholder="Soyad..." required="" name="formLastName">
+                                </div>
+
+                                <div>
+                                    <label for="formEmail" class="block text-sm/normal font-semibold text-black mb-2">Email Adresiniz</label>
+                                    <input type="email" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formEmail" placeholder="Email..." required="" name="formEmail">
+                                </div>
+
+                                <div>
+                                    <label for="formPhone" class="block text-sm/normal font-semibold text-black mb-2">Telefon Numaranız</label>
+                                    <input type="text" class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formPhone" placeholder="Telefon..." required="" name="formPhone">
+                                </div>
+
+                                <div class="sm:col-span-2">
+                                    <div class="mb-4">
+                                        <label for="formMessages" class="block text-sm/normal font-semibold text-black mb-2">Mesajınız</label>
+                                        <textarea class="block w-full text-sm rounded-md py-3 px-4 border-gray-200 focus:border-gray-300 focus:ring-transparent" id="formMessages" rows="4" placeholder="Mesaj..." required="" name="formMessages"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button type="submit" class="py-2 px-6 rounded-md text-baseitems-center justify-center border border-primary text-white bg-primary hover:bg-primaryDark transition-all duration-500 font-medium">Gönder <i class="mdi mdi-send ms-1"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+
+    <script>
+        document.getElementById('fullscreen-video-btn').addEventListener('click', function() {
+            const video = document.querySelector('video');
+            video.muted = false;
+            video.volume = 0.1;
+            video.currentTime = 0;
+            video.play();
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) { /* Safari */
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { /* IE11 */
+                video.msRequestFullscreen();
+            }
+        });
+    </script>
+
+    
+
+    <!-- Preline Js -->
+    <script src="assets/libs/preline/preline.js" ></script>
+
+    <!-- Lucide Js -->
+    <script src="assets/libs/lucide/umd/lucide.min.js"></script>
+
+    <!-- Gumshoe Js -->
+    <script src="assets/libs/gumshoejs/gumshoe.polyfills.min.js"></script>
+
+    <!-- Jarallax Js -->
+    <script src="assets/libs/jarallax/jarallax.min.js"></script>
+
+    <!-- Swiper Bundle Js -->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Js -->
+    <script src="assets/js/swiper.js"></script>
+
+    <!-- Main App Js -->
+    <script src="assets/js/app.js" ></script>
+
+    <script src="https://code.jivosite.com/widget/P2KwOLdVa3" async></script>
+
+    <script>
+        // Sayfa yüklendiğinde daha önce seçilen tema varsa onu uygula
+        document.addEventListener("DOMContentLoaded", function () {
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+                document.getElementById("theme-toggle").checked = true;
+            }
+        });
+    
+        // Tema değiştirme işlevi
+        function toggleTheme() {
+            if (document.getElementById("theme-toggle").checked) {
+                document.body.classList.add("dark-mode");
+                localStorage.setItem("theme", "dark"); // Tema bilgisini kaydet
+            } else {
+                document.body.classList.remove("dark-mode");
+                localStorage.setItem("theme", "light");
+            }
+        }
+    </script>
+
+<script>
+    // Butonun ve body'nin seçimi
+    const switcher = document.querySelector(".dl-switcher");
+    const body = document.body;
+
+    // Önceki modu kontrol et (Sayfa yenilendiğinde hatırlasın)
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+    }
+
+    // Butona tıklanınca tema değiştir
+    switcher.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Tema durumunu kaydet
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+</script>
+
+
+<body>
+    <div class="dl-switcher">
+        <div class="item">
+            <span class="state dark" data-text="Dark">Dark</span>
+            <span class="state light" data-text="Light">Light</span>
+        </div>
+        <div class="toddler">Light</div>
+    </div>
+
+    <h1>Dark Mode Denemesi</h1>
+    <p>Bu sayfada dark mode denemesi yapıyoruz.</p>
+
+    <script>
+        const switcher = document.querySelector(".dl-switcher");
+        const body = document.body;
+
+        // Sayfa yüklendiğinde theme değerini kontrol et
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("dark-mode");
+        }
+
+        // Buton tıklandığında tema değiştir
+        switcher.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+            // Tema durumunu kaydet
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
 </body>
+
+    </body>
 </html>
